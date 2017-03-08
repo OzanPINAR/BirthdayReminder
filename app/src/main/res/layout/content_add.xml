@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.berkay.birthdayreminderse360.Add"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/profile"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/pp"
+        android:layout_below="@+id/Creator"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="23dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/Name"
+        android:hint="Name"
+        android:layout_alignTop="@+id/profile"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/profile"
+        android:layout_toEndOf="@+id/profile" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/Surname"
+        android:layout_gravity="left"
+        android:hint="Surname"
+        android:layout_alignBottom="@+id/profile"
+        android:layout_alignLeft="@+id/Name"
+        android:layout_alignStart="@+id/Name" />
+
+    <Button
+        android:layout_width="452dp"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/Save"
+        android:layout_gravity="center_horizontal"
+        android:hint="Save"
+        android:layout_marginBottom="0dp"
+        android:layout_above="@+id/Cancel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="450dp"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/Cancel"
+        android:layout_gravity="center_horizontal"
+        android:hint="Cancel"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Add New Contact"
+        android:id="@+id/Creator"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp" />
+
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/datePicker"
+        android:calendarViewShown="false"
+        android:layout_gravity="center_horizontal"
+        android:datePickerMode="spinner"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
